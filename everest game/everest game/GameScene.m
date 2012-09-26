@@ -49,9 +49,27 @@
 {
     background = [Background node];
     routes = [Routes node];
+    campManager = [CampManager node];
+    climberManager = [ClimberManager node];
+    score = [Score node];
+    timeWindow = [TimeWindow node];
+    foreCast = [ForeCast node];
+    timer = [Timer node];
+    materialChoice = [MaterialChoice node];
+    events = [Events node];
     
     [self addChild:background];
     [self addChild:routes];
+    [self addChild:campManager];
+    [self addChild:climberManager];
+    [self addChild:score];
+    [self addChild:timeWindow];
+    [self addChild:foreCast];
+    [self addChild:timer];
+    [self addChild:materialChoice];
+    [self addChild:events];
+    
+    [routes blockRoute:1];
 }
 
 // on "dealloc" you need to release all your retained objects

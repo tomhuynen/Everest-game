@@ -9,17 +9,21 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Utils.h"
+#import "TimeNotifiableProtocol.h"
 
-@interface Routes : CCLayer {
+@interface Routes : CCLayer <TimeNotifiableProtocol>
+{
     
     Utils *utils;
-    NSArray *routes;
+    NSMutableArray *blockedRoutes;
     
     CCSprite *routesHolder;
     CCSprite *blockHolder;
     
-    int blockedIdex;
-    
+    int blockedIndex;
 }
+
+-(void)blockRoute:(int)index;
+-(BOOL)getPermissionToCross:(int)route;
 
 @end

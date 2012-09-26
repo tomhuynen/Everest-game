@@ -11,6 +11,36 @@
 		7E05B8DB160F27CD00811F79 /* Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E05B8DA160F27CD00811F79 /* Background.m */; };
 		7E05B8DE160F2A5000811F79 /* mountainDay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E05B8DC160F2A5000811F79 /* mountainDay.jpg */; };
 		7E05B8DF160F2A5000811F79 /* mountainNight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E05B8DD160F2A5000811F79 /* mountainNight.jpg */; };
+		7E082FB71611A563000456DD /* camp0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB21611A563000456DD /* camp0.png */; };
+		7E082FB81611A563000456DD /* camp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB31611A563000456DD /* camp1.png */; };
+		7E082FB91611A563000456DD /* camp2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB41611A563000456DD /* camp2.png */; };
+		7E082FBA1611A563000456DD /* camp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB51611A563000456DD /* camp3.png */; };
+		7E082FBB1611A563000456DD /* camp4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB61611A563000456DD /* camp4.png */; };
+		7E082FC41611AEFF000456DD /* box0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FBF1611AEFE000456DD /* box0.png */; };
+		7E082FC51611AEFF000456DD /* box1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FC01611AEFE000456DD /* box1.png */; };
+		7E082FC61611AEFF000456DD /* box2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FC11611AEFE000456DD /* box2.png */; };
+		7E082FC71611AEFF000456DD /* box3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FC21611AEFF000456DD /* box3.png */; };
+		7E082FC81611AEFF000456DD /* box4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FC31611AEFF000456DD /* box4.png */; };
+		7E1E3A0216131CBA00DD1515 /* bar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E1E3A0016131CBA00DD1515 /* bar.plist */; };
+		7E1E3A0316131CBA00DD1515 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1E3A0116131CBA00DD1515 /* bar.png */; };
+		7E1E3A061613241B00DD1515 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A051613241B00DD1515 /* Score.m */; };
+		7E1E3A091613252C00DD1515 /* TimeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A081613252B00DD1515 /* TimeWindow.m */; };
+		7E1E3A0C1613266A00DD1515 /* ForeCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A0B1613266A00DD1515 /* ForeCast.m */; };
+		7E1E3A0F1613272300DD1515 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A0E1613272200DD1515 /* Timer.m */; };
+		7E1E3A15161330E400DD1515 /* MaterialChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A14161330E300DD1515 /* MaterialChoice.m */; };
+		7E1E3A181613315700DD1515 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A171613315700DD1515 /* Events.m */; };
+		7E1E3A1C16133A9D00DD1515 /* climbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E1E3A1A16133A9D00DD1515 /* climbers.plist */; };
+		7E1E3A1D16133A9D00DD1515 /* climbers.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1E3A1B16133A9D00DD1515 /* climbers.png */; };
+		7E1E3A2116133B0D00DD1515 /* ClimberManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A2016133B0B00DD1515 /* ClimberManager.m */; };
+		7E1E3A2416133B1B00DD1515 /* Climber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A2316133B1A00DD1515 /* Climber.m */; };
+		7E1E3A3016135DF300DD1515 /* CCSpriteCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E3A2F16135DF100DD1515 /* CCSpriteCategory.m */; };
+		7E4B7FE91610AF6D0053C8BA /* path0Blocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4B7FE41610AF6D0053C8BA /* path0Blocked.png */; };
+		7E4B7FEA1610AF6D0053C8BA /* path1Blocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4B7FE51610AF6D0053C8BA /* path1Blocked.png */; };
+		7E4B7FEB1610AF6D0053C8BA /* path2Blocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4B7FE61610AF6D0053C8BA /* path2Blocked.png */; };
+		7E4B7FEC1610AF6D0053C8BA /* path3Blocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4B7FE71610AF6D0053C8BA /* path3Blocked.png */; };
+		7E4B7FED1610AF6D0053C8BA /* path4Blocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4B7FE81610AF6D0053C8BA /* path4Blocked.png */; };
+		7E4B7FF11610C5360053C8BA /* CampManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4B7FF01610C5360053C8BA /* CampManager.m */; };
+		7E4B7FF41610CA780053C8BA /* Camp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4B7FF31610CA780053C8BA /* Camp.m */; };
 		7E535973160CBC14008F245C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E535972160CBC14008F245C /* QuartzCore.framework */; };
 		7E535975160CBC14008F245C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E535974160CBC14008F245C /* OpenGLES.framework */; };
 		7E535977160CBC14008F245C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E535976160CBC14008F245C /* OpenAL.framework */; };
@@ -131,6 +161,8 @@
 		7E686FC0160F49F700F2B5C8 /* path2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E686FBB160F49F700F2B5C8 /* path2.png */; };
 		7E686FC1160F49F700F2B5C8 /* path3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E686FBC160F49F700F2B5C8 /* path3.png */; };
 		7E686FC2160F49F700F2B5C8 /* path4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E686FBD160F49F700F2B5C8 /* path4.png */; };
+		7E9E66B51611CE0500258AC5 /* SummitCamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E66B41611CE0400258AC5 /* SummitCamp.m */; };
+		7E9E66CD1611D7F300258AC5 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E66CC1611D7F300258AC5 /* Bar.m */; };
 		7EF2AB20160F3CEF00A44794 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2AB1F160F3CEF00A44794 /* Routes.m */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +173,48 @@
 		7E05B8DA160F27CD00811F79 /* Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Background.m; sourceTree = "<group>"; };
 		7E05B8DC160F2A5000811F79 /* mountainDay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountainDay.jpg; path = Resources/mountainDay.jpg; sourceTree = "<group>"; };
 		7E05B8DD160F2A5000811F79 /* mountainNight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountainNight.jpg; path = Resources/mountainNight.jpg; sourceTree = "<group>"; };
+		7E082FB21611A563000456DD /* camp0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp0.png; sourceTree = "<group>"; };
+		7E082FB31611A563000456DD /* camp1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp1.png; sourceTree = "<group>"; };
+		7E082FB41611A563000456DD /* camp2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp2.png; sourceTree = "<group>"; };
+		7E082FB51611A563000456DD /* camp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp3.png; sourceTree = "<group>"; };
+		7E082FB61611A563000456DD /* camp4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp4.png; sourceTree = "<group>"; };
+		7E082FBF1611AEFE000456DD /* box0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box0.png; sourceTree = "<group>"; };
+		7E082FC01611AEFE000456DD /* box1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box1.png; sourceTree = "<group>"; };
+		7E082FC11611AEFE000456DD /* box2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box2.png; sourceTree = "<group>"; };
+		7E082FC21611AEFF000456DD /* box3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box3.png; sourceTree = "<group>"; };
+		7E082FC31611AEFF000456DD /* box4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box4.png; sourceTree = "<group>"; };
+		7E1E3A0016131CBA00DD1515 /* bar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bar.plist; sourceTree = "<group>"; };
+		7E1E3A0116131CBA00DD1515 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		7E1E3A041613241B00DD1515 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		7E1E3A051613241B00DD1515 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		7E1E3A071613252B00DD1515 /* TimeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeWindow.h; sourceTree = "<group>"; };
+		7E1E3A081613252B00DD1515 /* TimeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeWindow.m; sourceTree = "<group>"; };
+		7E1E3A0A1613266A00DD1515 /* ForeCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeCast.h; sourceTree = "<group>"; };
+		7E1E3A0B1613266A00DD1515 /* ForeCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeCast.m; sourceTree = "<group>"; };
+		7E1E3A0D1613272200DD1515 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		7E1E3A0E1613272200DD1515 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		7E1E3A1016132C9200DD1515 /* TimeNotifiableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeNotifiableProtocol.h; sourceTree = "<group>"; };
+		7E1E3A13161330E200DD1515 /* MaterialChoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialChoice.h; sourceTree = "<group>"; };
+		7E1E3A14161330E300DD1515 /* MaterialChoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialChoice.m; sourceTree = "<group>"; };
+		7E1E3A161613315600DD1515 /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		7E1E3A171613315700DD1515 /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		7E1E3A1A16133A9D00DD1515 /* climbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = climbers.plist; sourceTree = "<group>"; };
+		7E1E3A1B16133A9D00DD1515 /* climbers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = climbers.png; sourceTree = "<group>"; };
+		7E1E3A1F16133B0A00DD1515 /* ClimberManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClimberManager.h; sourceTree = "<group>"; };
+		7E1E3A2016133B0B00DD1515 /* ClimberManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClimberManager.m; sourceTree = "<group>"; };
+		7E1E3A2216133B1A00DD1515 /* Climber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Climber.h; sourceTree = "<group>"; };
+		7E1E3A2316133B1A00DD1515 /* Climber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Climber.m; sourceTree = "<group>"; };
+		7E1E3A2E16135DEF00DD1515 /* CCSpriteCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteCategory.h; sourceTree = "<group>"; };
+		7E1E3A2F16135DF100DD1515 /* CCSpriteCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSpriteCategory.m; sourceTree = "<group>"; };
+		7E4B7FE41610AF6D0053C8BA /* path0Blocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path0Blocked.png; sourceTree = "<group>"; };
+		7E4B7FE51610AF6D0053C8BA /* path1Blocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path1Blocked.png; sourceTree = "<group>"; };
+		7E4B7FE61610AF6D0053C8BA /* path2Blocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path2Blocked.png; sourceTree = "<group>"; };
+		7E4B7FE71610AF6D0053C8BA /* path3Blocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path3Blocked.png; sourceTree = "<group>"; };
+		7E4B7FE81610AF6D0053C8BA /* path4Blocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path4Blocked.png; sourceTree = "<group>"; };
+		7E4B7FEF1610C5360053C8BA /* CampManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampManager.h; sourceTree = "<group>"; };
+		7E4B7FF01610C5360053C8BA /* CampManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampManager.m; sourceTree = "<group>"; };
+		7E4B7FF21610CA780053C8BA /* Camp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camp.h; sourceTree = "<group>"; };
+		7E4B7FF31610CA780053C8BA /* Camp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camp.m; sourceTree = "<group>"; };
 		7E53596E160CBC14008F245C /* everest game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "everest game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E535972160CBC14008F245C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7E535974160CBC14008F245C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -381,6 +455,10 @@
 		7E686FBB160F49F700F2B5C8 /* path2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = path2.png; path = Resources/path2.png; sourceTree = "<group>"; };
 		7E686FBC160F49F700F2B5C8 /* path3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = path3.png; path = Resources/path3.png; sourceTree = "<group>"; };
 		7E686FBD160F49F700F2B5C8 /* path4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = path4.png; path = Resources/path4.png; sourceTree = "<group>"; };
+		7E9E66B31611CE0400258AC5 /* SummitCamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummitCamp.h; sourceTree = "<group>"; };
+		7E9E66B41611CE0400258AC5 /* SummitCamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummitCamp.m; sourceTree = "<group>"; };
+		7E9E66CB1611D7F300258AC5 /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		7E9E66CC1611D7F300258AC5 /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
 		7EF2AB1E160F3CEF00A44794 /* Routes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Routes.h; sourceTree = "<group>"; };
 		7EF2AB1F160F3CEF00A44794 /* Routes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Routes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -404,6 +482,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E1E3A19161332AA00DD1515 /* events */ = {
+			isa = PBXGroup;
+			children = (
+				7E1E3A161613315600DD1515 /* Events.h */,
+				7E1E3A171613315700DD1515 /* Events.m */,
+			);
+			name = events;
+			sourceTree = "<group>";
+		};
+		7E1E3A1E16133AB500DD1515 /* camps */ = {
+			isa = PBXGroup;
+			children = (
+				7E4B7FEF1610C5360053C8BA /* CampManager.h */,
+				7E4B7FF01610C5360053C8BA /* CampManager.m */,
+				7E4B7FF21610CA780053C8BA /* Camp.h */,
+				7E4B7FF31610CA780053C8BA /* Camp.m */,
+				7E9E66B31611CE0400258AC5 /* SummitCamp.h */,
+				7E9E66B41611CE0400258AC5 /* SummitCamp.m */,
+				7E9E66CB1611D7F300258AC5 /* Bar.h */,
+				7E9E66CC1611D7F300258AC5 /* Bar.m */,
+			);
+			name = camps;
+			sourceTree = "<group>";
+		};
+		7E1E3A2516133B2300DD1515 /* climbers */ = {
+			isa = PBXGroup;
+			children = (
+				7E1E3A1F16133B0A00DD1515 /* ClimberManager.h */,
+				7E1E3A2016133B0B00DD1515 /* ClimberManager.m */,
+				7E1E3A2216133B1A00DD1515 /* Climber.h */,
+				7E1E3A2316133B1A00DD1515 /* Climber.m */,
+			);
+			name = climbers;
+			sourceTree = "<group>";
+		};
 		7E535963160CBC13008F245C = {
 			isa = PBXGroup;
 			children = (
@@ -439,8 +552,13 @@
 		7E535982160CBC14008F245C /* everest game */ = {
 			isa = PBXGroup;
 			children = (
-				7E535AD4160CBC18008F245C /* AppDelegate.h */,
+				7E1E3A1E16133AB500DD1515 /* camps */,
+				7E1E3A19161332AA00DD1515 /* events */,
+				7E1E3A2516133B2300DD1515 /* climbers */,
 				7E535AD5160CBC18008F245C /* AppDelegate.m */,
+				7E535AD4160CBC18008F245C /* AppDelegate.h */,
+				7E1E3A2E16135DEF00DD1515 /* CCSpriteCategory.h */,
+				7E1E3A2F16135DF100DD1515 /* CCSpriteCategory.m */,
 				7E535AD7160CBC18008F245C /* RootViewController.h */,
 				7E535AD8160CBC18008F245C /* RootViewController.m */,
 				7E535ADD160CBC18008F245C /* GameConfig.h */,
@@ -452,6 +570,17 @@
 				7EF2AB1F160F3CEF00A44794 /* Routes.m */,
 				7E05B8D5160F126C00811F79 /* Utils.h */,
 				7E05B8D6160F126C00811F79 /* Utils.m */,
+				7E1E3A041613241B00DD1515 /* Score.h */,
+				7E1E3A051613241B00DD1515 /* Score.m */,
+				7E1E3A071613252B00DD1515 /* TimeWindow.h */,
+				7E1E3A081613252B00DD1515 /* TimeWindow.m */,
+				7E1E3A0A1613266A00DD1515 /* ForeCast.h */,
+				7E1E3A0B1613266A00DD1515 /* ForeCast.m */,
+				7E1E3A0D1613272200DD1515 /* Timer.h */,
+				7E1E3A0E1613272200DD1515 /* Timer.m */,
+				7E1E3A13161330E200DD1515 /* MaterialChoice.h */,
+				7E1E3A14161330E300DD1515 /* MaterialChoice.m */,
+				7E1E3A1016132C9200DD1515 /* TimeNotifiableProtocol.h */,
 				7E535983160CBC14008F245C /* Resources */,
 				7E535997160CBC14008F245C /* libs */,
 				7E535AD0160CBC18008F245C /* Supporting Files */,
@@ -462,8 +591,27 @@
 		7E535983160CBC14008F245C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E1E3A0016131CBA00DD1515 /* bar.plist */,
+				7E1E3A0116131CBA00DD1515 /* bar.png */,
+				7E1E3A1A16133A9D00DD1515 /* climbers.plist */,
+				7E1E3A1B16133A9D00DD1515 /* climbers.png */,
+				7E082FBF1611AEFE000456DD /* box0.png */,
+				7E082FC01611AEFE000456DD /* box1.png */,
+				7E082FC11611AEFE000456DD /* box2.png */,
+				7E082FC21611AEFF000456DD /* box3.png */,
+				7E082FC31611AEFF000456DD /* box4.png */,
+				7E082FB21611A563000456DD /* camp0.png */,
+				7E082FB31611A563000456DD /* camp1.png */,
+				7E082FB41611A563000456DD /* camp2.png */,
+				7E082FB51611A563000456DD /* camp3.png */,
+				7E082FB61611A563000456DD /* camp4.png */,
 				7E686FB9160F49F700F2B5C8 /* path0.png */,
 				7E686FBA160F49F700F2B5C8 /* path1.png */,
+				7E4B7FE41610AF6D0053C8BA /* path0Blocked.png */,
+				7E4B7FE51610AF6D0053C8BA /* path1Blocked.png */,
+				7E4B7FE61610AF6D0053C8BA /* path2Blocked.png */,
+				7E4B7FE71610AF6D0053C8BA /* path3Blocked.png */,
+				7E4B7FE81610AF6D0053C8BA /* path4Blocked.png */,
 				7E686FBB160F49F700F2B5C8 /* path2.png */,
 				7E686FBC160F49F700F2B5C8 /* path3.png */,
 				7E686FBD160F49F700F2B5C8 /* path4.png */,
@@ -860,6 +1008,25 @@
 				7E686FC0160F49F700F2B5C8 /* path2.png in Resources */,
 				7E686FC1160F49F700F2B5C8 /* path3.png in Resources */,
 				7E686FC2160F49F700F2B5C8 /* path4.png in Resources */,
+				7E4B7FE91610AF6D0053C8BA /* path0Blocked.png in Resources */,
+				7E4B7FEA1610AF6D0053C8BA /* path1Blocked.png in Resources */,
+				7E4B7FEB1610AF6D0053C8BA /* path2Blocked.png in Resources */,
+				7E4B7FEC1610AF6D0053C8BA /* path3Blocked.png in Resources */,
+				7E4B7FED1610AF6D0053C8BA /* path4Blocked.png in Resources */,
+				7E082FB71611A563000456DD /* camp0.png in Resources */,
+				7E082FB81611A563000456DD /* camp1.png in Resources */,
+				7E082FB91611A563000456DD /* camp2.png in Resources */,
+				7E082FBA1611A563000456DD /* camp3.png in Resources */,
+				7E082FBB1611A563000456DD /* camp4.png in Resources */,
+				7E082FC41611AEFF000456DD /* box0.png in Resources */,
+				7E082FC51611AEFF000456DD /* box1.png in Resources */,
+				7E082FC61611AEFF000456DD /* box2.png in Resources */,
+				7E082FC71611AEFF000456DD /* box3.png in Resources */,
+				7E082FC81611AEFF000456DD /* box4.png in Resources */,
+				7E1E3A0216131CBA00DD1515 /* bar.plist in Resources */,
+				7E1E3A0316131CBA00DD1515 /* bar.png in Resources */,
+				7E1E3A1C16133A9D00DD1515 /* climbers.plist in Resources */,
+				7E1E3A1D16133A9D00DD1515 /* climbers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +1138,19 @@
 				7E05B8D7160F126C00811F79 /* Utils.m in Sources */,
 				7E05B8DB160F27CD00811F79 /* Background.m in Sources */,
 				7EF2AB20160F3CEF00A44794 /* Routes.m in Sources */,
+				7E4B7FF11610C5360053C8BA /* CampManager.m in Sources */,
+				7E4B7FF41610CA780053C8BA /* Camp.m in Sources */,
+				7E9E66B51611CE0500258AC5 /* SummitCamp.m in Sources */,
+				7E9E66CD1611D7F300258AC5 /* Bar.m in Sources */,
+				7E1E3A061613241B00DD1515 /* Score.m in Sources */,
+				7E1E3A091613252C00DD1515 /* TimeWindow.m in Sources */,
+				7E1E3A0C1613266A00DD1515 /* ForeCast.m in Sources */,
+				7E1E3A0F1613272300DD1515 /* Timer.m in Sources */,
+				7E1E3A15161330E400DD1515 /* MaterialChoice.m in Sources */,
+				7E1E3A181613315700DD1515 /* Events.m in Sources */,
+				7E1E3A2116133B0D00DD1515 /* ClimberManager.m in Sources */,
+				7E1E3A2416133B1B00DD1515 /* Climber.m in Sources */,
+				7E1E3A3016135DF300DD1515 /* CCSpriteCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

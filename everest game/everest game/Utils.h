@@ -17,6 +17,7 @@
 
 +(Utils*) current;
 -(CGPoint) relativePointByCoordinates:(int)x  ypos:(int)y;
+-(float) relativeDistance:(int)d horizontal:(BOOL)h;
 
 
 @end

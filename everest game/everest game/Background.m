@@ -21,7 +21,7 @@
 {
 	if( (self=[super init])) {
 		
-        //utils = [Utils current];
+        utils = [Utils current];
         
         [self display];
 	}
@@ -42,8 +42,16 @@
     [fgHolder addChild: bgNight];
     [self addChild:bgHolder];
     [self addChild:fgHolder];
-    
-    
+}
+
+-(void)updateTime:(int)time
+{
+
+}
+
+-(void)updateTurn:(int)turn
+{
+
 }
 
 @end

@@ -17,9 +17,6 @@ static Utils* current;
 {
 	if( (self=[super init]))
     {
-        NSAssert1(current == nil, @"utils instance allready exists", NSStringFromClass([self class]));
-        current = self;
-        
         CGSize size = [[CCDirector sharedDirector] winSize];
         sw = size.width;
         sh = size.height;
@@ -30,20 +27,40 @@ static Utils* current;
 
 +(Utils*) current
 {
-    NSAssert1(current == nil, @"utils not yet available", NSStringFromClass([self class]));
+    if (current == nil)
+    {
+        current = [[Utils alloc] init];
+    }
     
     return current;
 }
 
+
 -(CGPoint)relativePointByCoordinates:(int)x ypos:(int)y
 {
-    int w = 1024;
-    int h = 786;
+    int wOriginal = 1024;
+    int hOriginal = 786;
     
-    float newX = (x * sw) / w;
-    float newY = (y * sh) / h;
-    
+    float newX = (x * sw) / wOriginal;
+    float newY = (y * sh) / hOriginal;
+
     return CGPointMake(newX, newY);
+}
+
+-(float)relativeDistance:(int)d horizontal:(BOOL)h
+{
+    if(h == YES)
+    {
+        int hOriginal = 786;
+        float newY = (d * sh) / hOriginal;
+        return newY;
+    }
+    else
+    {
+        int wOriginal = 1024;
+        float newX = (d * sw) / wOriginal;
+        return newX;
+    }
 }
 
 

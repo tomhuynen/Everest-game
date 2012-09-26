@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Utils.h"
+#import "TimeNotifiableProtocol.h"
 
 
-@interface Background : CCLayer {
+@interface Background : CCLayer <TimeNotifiableProtocol>
+{
         
     Utils *utils;
     
