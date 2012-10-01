@@ -31,4 +31,6 @@
 -(id) initWithId:(int)i height:(int)h distance:(int)d boxRight: (int)br;
 -(void)display;
 
+@property int campId;
+
 @end

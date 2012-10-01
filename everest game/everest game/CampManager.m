@@ -20,7 +20,8 @@
 @implementation CampManager
 
 @synthesize positions;
-@synthesize panelPositions;
+@synthesize boxRights;
+@synthesize camps;
 
 static CampManager* sharedInstance;
 
@@ -46,19 +47,12 @@ static CampManager* sharedInstance;
 {
     utils = [Utils current];
     
-    positions = [NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:224 ypos:42]],
+    positions =  [NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:224 ypos:42]],
                  [NSValue valueWithCGPoint:[utils relativePointByCoordinates:342 ypos:192]],
                  [NSValue valueWithCGPoint:[utils relativePointByCoordinates:449 ypos:261]],
                  [NSValue valueWithCGPoint:[utils relativePointByCoordinates:485 ypos:336]],
                  [NSValue valueWithCGPoint:[utils relativePointByCoordinates:444 ypos:405]],
                  nil];
-    
-    panelPositions = [NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:340 ypos:42]],
-                     [NSValue valueWithCGPoint:[utils relativePointByCoordinates:438 ypos:168]],
-                     [NSValue valueWithCGPoint:[utils relativePointByCoordinates:564 ypos:251]],
-                     [NSValue valueWithCGPoint:[utils relativePointByCoordinates:555 ypos:324]],
-                     [NSValue valueWithCGPoint:[utils relativePointByCoordinates:509 ypos:391]],
-                     nil];
     
     heights = [NSArray arrayWithObjects:[NSNumber numberWithInteger:1000],
                [NSNumber numberWithInteger:2000],
@@ -74,12 +68,14 @@ static CampManager* sharedInstance;
                  [NSNumber numberWithInteger:5000],
                  nil];
     
-    boxRights = [NSArray arrayWithObjects:[NSNumber numberWithInteger:1],
+    boxRights = [[NSArray arrayWithObjects:[NSNumber numberWithInteger:1],
                  [NSNumber numberWithInteger:-1],
                  [NSNumber numberWithInteger:1],
                  [NSNumber numberWithInteger:-1],
                  [NSNumber numberWithInteger:-1],
-                 nil];
+                 nil] retain];
+    
+    camps = [[NSMutableArray alloc] init];
 }
 
 -(void)display
@@ -96,6 +92,7 @@ static CampManager* sharedInstance;
             
             camp.position = [[positions objectAtIndex:i] CGPointValue];
             [self addChild:camp];
+            [camps addObject:camp];
         }
         else
         {
@@ -105,6 +102,7 @@ static CampManager* sharedInstance;
             
             camp.position = [[positions objectAtIndex:i] CGPointValue];
             [self addChild:camp];
+            [camps addObject:camp];
         }
     }
 }
@@ -119,11 +117,9 @@ static CampManager* sharedInstance;
 
 }
 
+-(void) dealloc
+{
+    [super dealloc];
+}
+
 @end
-
-
-
-
-
-
-

@@ -39,7 +39,7 @@ static Utils* current;
 -(CGPoint)relativePointByCoordinates:(int)x ypos:(int)y
 {
     int wOriginal = 1024;
-    int hOriginal = 786;
+    int hOriginal = 768;
     
     float newX = (x * sw) / wOriginal;
     float newY = (y * sh) / hOriginal;
@@ -51,7 +51,7 @@ static Utils* current;
 {
     if(h == YES)
     {
-        int hOriginal = 786;
+        int hOriginal = 768;
         float newY = (d * sh) / hOriginal;
         return newY;
     }

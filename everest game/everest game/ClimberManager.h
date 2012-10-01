@@ -11,6 +11,7 @@
 #import "TimeNotifiableProtocol.h"
 #import "Utils.h"
 #import "Climber.h"
+#import "Camp.h"
 
 @interface ClimberManager : CCLayer <TimeNotifiableProtocol>
 {
@@ -18,14 +19,32 @@
     NSMutableArray *climbers;
     CCSpriteBatchNode *climberBatch;
     Climber *movingClimber;
+    Camp *campLeftByClimber;
+    
     int climberSpacing;
+    int currentPanelId;
+    CGRect panel0boundingBox;
+    CGRect panel1boundingBox;
+    CGRect panel2boundingBox;
+    CGRect panel3boundingBox;
+    CGRect panel4boundingBox;
+    NSArray *panelBoundingBoxes;
+    NSArray *panelPositions;
+    
+    NSMutableArray *panelClimberCamp0;
+    NSMutableArray *panelClimberCamp1;
+    NSMutableArray *panelClimberCamp2;
+    NSMutableArray *panelClimberCamp3;
+    NSMutableArray *panelClimberCamp4;
+    NSArray *panelClimbers;
 }
 
--(void)positionInCamp:(int)id;
--(void)makeRoomInCamp:(int)id;
+
 -(void)calculateCondition:(int)id;
 -(void)summitAttempt;
 -(void)removeClimber:(int)id;
+
+
 
 
 @end

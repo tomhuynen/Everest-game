@@ -15,7 +15,7 @@
 
 
 @implementation Camp
-
+@synthesize campId;
 
 -(id) initWithId:(int)i height:(int)h distance:(int)d boxRight:(int)br
 {

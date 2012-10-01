@@ -10,7 +10,6 @@
 		7E05B8D7160F126C00811F79 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E05B8D6160F126C00811F79 /* Utils.m */; };
 		7E05B8DB160F27CD00811F79 /* Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E05B8DA160F27CD00811F79 /* Background.m */; };
 		7E05B8DE160F2A5000811F79 /* mountainDay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E05B8DC160F2A5000811F79 /* mountainDay.jpg */; };
-		7E05B8DF160F2A5000811F79 /* mountainNight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E05B8DD160F2A5000811F79 /* mountainNight.jpg */; };
 		7E082FB71611A563000456DD /* camp0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB21611A563000456DD /* camp0.png */; };
 		7E082FB81611A563000456DD /* camp1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB31611A563000456DD /* camp1.png */; };
 		7E082FB91611A563000456DD /* camp2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E082FB41611A563000456DD /* camp2.png */; };
@@ -161,6 +160,7 @@
 		7E686FC0160F49F700F2B5C8 /* path2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E686FBB160F49F700F2B5C8 /* path2.png */; };
 		7E686FC1160F49F700F2B5C8 /* path3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E686FBC160F49F700F2B5C8 /* path3.png */; };
 		7E686FC2160F49F700F2B5C8 /* path4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E686FBD160F49F700F2B5C8 /* path4.png */; };
+		7E893D68161474D60009FF14 /* mountainNight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E893D67161474D60009FF14 /* mountainNight.jpg */; };
 		7E9E66B51611CE0500258AC5 /* SummitCamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E66B41611CE0400258AC5 /* SummitCamp.m */; };
 		7E9E66CD1611D7F300258AC5 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E66CC1611D7F300258AC5 /* Bar.m */; };
 		7EF2AB20160F3CEF00A44794 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2AB1F160F3CEF00A44794 /* Routes.m */; };
@@ -172,7 +172,6 @@
 		7E05B8D9160F27CD00811F79 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Background.h; sourceTree = "<group>"; };
 		7E05B8DA160F27CD00811F79 /* Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Background.m; sourceTree = "<group>"; };
 		7E05B8DC160F2A5000811F79 /* mountainDay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountainDay.jpg; path = Resources/mountainDay.jpg; sourceTree = "<group>"; };
-		7E05B8DD160F2A5000811F79 /* mountainNight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountainNight.jpg; path = Resources/mountainNight.jpg; sourceTree = "<group>"; };
 		7E082FB21611A563000456DD /* camp0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp0.png; sourceTree = "<group>"; };
 		7E082FB31611A563000456DD /* camp1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp1.png; sourceTree = "<group>"; };
 		7E082FB41611A563000456DD /* camp2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camp2.png; sourceTree = "<group>"; };
@@ -455,6 +454,7 @@
 		7E686FBB160F49F700F2B5C8 /* path2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = path2.png; path = Resources/path2.png; sourceTree = "<group>"; };
 		7E686FBC160F49F700F2B5C8 /* path3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = path3.png; path = Resources/path3.png; sourceTree = "<group>"; };
 		7E686FBD160F49F700F2B5C8 /* path4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = path4.png; path = Resources/path4.png; sourceTree = "<group>"; };
+		7E893D67161474D60009FF14 /* mountainNight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mountainNight.jpg; path = Resources/mountainNight.jpg; sourceTree = "<group>"; };
 		7E9E66B31611CE0400258AC5 /* SummitCamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummitCamp.h; sourceTree = "<group>"; };
 		7E9E66B41611CE0400258AC5 /* SummitCamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummitCamp.m; sourceTree = "<group>"; };
 		7E9E66CB1611D7F300258AC5 /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
@@ -616,7 +616,7 @@
 				7E686FBC160F49F700F2B5C8 /* path3.png */,
 				7E686FBD160F49F700F2B5C8 /* path4.png */,
 				7E05B8DC160F2A5000811F79 /* mountainDay.jpg */,
-				7E05B8DD160F2A5000811F79 /* mountainNight.jpg */,
+				7E893D67161474D60009FF14 /* mountainNight.jpg */,
 				7E535984160CBC14008F245C /* Default.png */,
 				7E535986160CBC14008F245C /* fps_images.png */,
 				7E535988160CBC14008F245C /* Icon-72.png */,
@@ -1002,7 +1002,6 @@
 				7E535993160CBC14008F245C /* Icon@2x.png in Resources */,
 				7E535996160CBC14008F245C /* iTunesArtwork in Resources */,
 				7E05B8DE160F2A5000811F79 /* mountainDay.jpg in Resources */,
-				7E05B8DF160F2A5000811F79 /* mountainNight.jpg in Resources */,
 				7E686FBE160F49F700F2B5C8 /* path0.png in Resources */,
 				7E686FBF160F49F700F2B5C8 /* path1.png in Resources */,
 				7E686FC0160F49F700F2B5C8 /* path2.png in Resources */,
@@ -1027,6 +1026,7 @@
 				7E1E3A0316131CBA00DD1515 /* bar.png in Resources */,
 				7E1E3A1C16133A9D00DD1515 /* climbers.plist in Resources */,
 				7E1E3A1D16133A9D00DD1515 /* climbers.png in Resources */,
+				7E893D68161474D60009FF14 /* mountainNight.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

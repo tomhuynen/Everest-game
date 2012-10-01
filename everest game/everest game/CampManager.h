@@ -21,13 +21,14 @@
     NSArray *heights;
     NSArray *distances;
     NSArray *boxRights;
-    NSArray *panelPositions;
+    NSMutableArray *camps;
     
     Utils *utils;
 }
 
 @property (nonatomic, retain) NSArray *positions;
-@property (nonatomic, retain) NSArray *panelPositions;
+@property (nonatomic, retain) NSArray *boxRights;
+@property (nonatomic, retain) NSMutableArray *camps;
 
 +(CampManager *)current;
 

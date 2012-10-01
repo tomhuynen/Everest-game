@@ -15,11 +15,23 @@
 
 @implementation Climber
 
--(id)initWithId:(int)i
+@synthesize image;
+@synthesize campId;
+@synthesize positionOnStartMove;
+@synthesize campPositionId;
+@synthesize diameter;
+@synthesize radius;
+@synthesize startDragPosition;
+@synthesize leftPanelPosition;
+@synthesize isInArray;
+
+
+-(id)initWithId:(int)i campPositionId: (int)cp
 {
     if(self = [super init])
     {
         climberId = i;
+        campPositionId = cp;
         
         [self setup];
         [self display];
@@ -30,7 +42,11 @@
 
 -(void)setup
 {
-    
+    isInArray = YES;
+    utils = [Utils node];
+    campId = 0;
+    diameter = [utils relativeDistance:54 horizontal:YES];
+    radius = [utils relativeDistance:27 horizontal:YES];
 }
 
 -(void)display
