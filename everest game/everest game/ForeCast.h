@@ -9,10 +9,25 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "TimeNotifiableProtocol.h"
+#import "Utils.h"
 
-@interface ForeCast : CCNode <TimeNotifiableProtocol>
+@interface ForeCast : CCLayer <TimeNotifiableProtocol>
 {
     NSArray *weather;
+    NSArray *weatherTypes;
+    BOOL dragging;
+    Utils *utils;
+    int w;
+    int h;
+    int sliderMinPos;
+    int sliderMaxPos;
+    CCSprite *background;
+    CCSprite *weatherHolder;
+    CCSprite *sliderHolder;
+    CCSprite *slider;
+    CCSpriteBatchNode *forCastBatch;
 }
+
+
 
 @end

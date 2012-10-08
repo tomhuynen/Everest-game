@@ -19,6 +19,7 @@
     NSMutableArray *climbers;
     CCSpriteBatchNode *climberBatch;
     Climber *movingClimber;
+    CCSprite *platform;
     Camp *campLeftByClimber;
     
     int climberSpacing;
@@ -30,6 +31,7 @@
     CGRect panel4boundingBox;
     NSArray *panelBoundingBoxes;
     NSArray *panelPositions;
+    NSArray *panelRights;
     
     NSMutableArray *panelClimberCamp0;
     NSMutableArray *panelClimberCamp1;
@@ -39,7 +41,7 @@
     NSArray *panelClimbers;
 }
 
-
++(ClimberManager*) current;
 -(void)calculateCondition:(int)id;
 -(void)summitAttempt;
 -(void)removeClimber:(int)id;

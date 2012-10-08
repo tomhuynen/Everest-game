@@ -15,6 +15,8 @@
 
 @implementation Timer
 
+static Timer* current;
+
 -(id)init
 {
     if(self = [super init])
@@ -59,6 +61,16 @@
 -(void)notifyTime
 {
 
+}
+
++(Timer*) current
+{
+    if (current == nil)
+    {
+        current = [[Timer alloc] init];
+    }
+    
+    return current;
 }
 
 -(void)dealloc

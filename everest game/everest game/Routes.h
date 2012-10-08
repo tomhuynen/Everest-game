@@ -19,11 +19,13 @@
     
     CCSprite *routesHolder;
     CCSprite *blockHolder;
+    CCSpriteBatchNode *routesBatch;
     
     int blockedIndex;
 }
 
++(Routes*) current;
 -(void)blockRoute:(int)index;
--(BOOL)getPermissionToCross:(int)route;
+-(BOOL)getPermissionToCrossCampFrom:(int)cf campTo:(int)ct;
 
 @end

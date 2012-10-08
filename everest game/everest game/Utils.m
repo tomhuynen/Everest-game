@@ -49,7 +49,7 @@ static Utils* current;
 
 -(float)relativeDistance:(int)d horizontal:(BOOL)h
 {
-    if(h == YES)
+    if(h == NO)
     {
         int hOriginal = 768;
         float newY = (d * sh) / hOriginal;

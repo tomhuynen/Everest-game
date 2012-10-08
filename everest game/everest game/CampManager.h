@@ -21,14 +21,19 @@
     NSArray *heights;
     NSArray *distances;
     NSArray *boxRights;
+    NSArray *spaceCampToBox;
     NSMutableArray *camps;
+    CCSpriteBatchNode *campBatch;
+    CCSpriteBatchNode *boxBatch;
     
     Utils *utils;
 }
 
+@property (nonatomic, retain) NSArray *spaceCampToBox;
 @property (nonatomic, retain) NSArray *positions;
 @property (nonatomic, retain) NSArray *boxRights;
 @property (nonatomic, retain) NSMutableArray *camps;
+@property (nonatomic, retain) CCSpriteBatchNode *campBatch;
 
 +(CampManager *)current;
 

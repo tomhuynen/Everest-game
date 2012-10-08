@@ -8,10 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Utils.h"
+#import "ClimberManager.h"
+#import "Timer.h"
+#import "Utils.h"
 
-@interface TimeWindow : CCNode
+@interface TimeWindow : CCLayer
 {
     int value;
+    Utils *utils;
+    ClimberManager *climberManager;
+    Timer *timer;
+    
+    CCSpriteBatchNode *timeBatch;
+    CCSprite *timeWindow;
 }
 
 -(void)calculate;

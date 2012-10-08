@@ -23,6 +23,11 @@
     CCSprite *bgNight;
     CCSprite *fgDay;
     CCSprite *fgNight;
+    CCSprite *nightFade;
+    
+    CCSpriteBatchNode *batchBackground;
+    
+    int maxLeftPos;
 }
 
 @end

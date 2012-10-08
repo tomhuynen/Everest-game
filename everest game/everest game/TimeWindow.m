@@ -15,10 +15,14 @@
 
 @implementation TimeWindow
 
+static TimeWindow* classInstance;
+
 -(id)init
 {
     if(self = [super init])
     {
+        classInstance = self;
+        
         [self setup];
         [self display];
     }
@@ -28,17 +32,34 @@
 
 -(void)setup
 {
-
+    utils = [Utils current];
+    climberManager = [ClimberManager current];
+    timer = [Timer current];
+    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"timewindow.plist"];
+    timeBatch = [CCSpriteBatchNode batchNodeWithFile:@"boxes.png"];
 }
 
 -(void)display
 {
-
+    timeWindow = [CCSprite spriteWithSpriteFrameName:@"timewindow20.png"];
+    timeWindow.position = [utils relativePointByCoordinates:926 ypos:685];
+    [self addChild:timeWindow];
 }
 
 -(void)calculate
 {
-    //formule hierzo
+    //Formula: 30-3-(amount of days)-1/(condition highest positioned climber)= time window
+}
+
++(TimeWindow*) current
+{
+    if (classInstance == nil)
+    {
+        classInstance = [[TimeWindow alloc] init];
+    }
+    
+    return classInstance;
 }
 
 @end

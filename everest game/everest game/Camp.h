@@ -32,5 +32,6 @@
 -(void)display;
 
 @property int campId;
+@property int material;
 
 @end

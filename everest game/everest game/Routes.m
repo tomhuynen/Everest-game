@@ -17,6 +17,8 @@
 
 @implementation Routes
 
+static Routes* current;
+
 -(id) init
 {
 	if( (self=[super init])) {
@@ -24,19 +26,19 @@
         blockedRoutes = [[[NSMutableArray alloc] init] retain];
         utils = [Utils current];
         
-        [self display];
         [self setup];
+        [self display];
 	}
 	return self;
 }
 
 -(void)display
 {
-    NSArray *positions = [NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:229 ypos:166]],
-                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:368 ypos:240]],
-                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:471 ypos:308]],
-                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:459 ypos:381]],
-                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:336 ypos:501]],
+    NSArray *positions = [NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:220 ypos:320]],
+                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:483 ypos:429]],
+                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:490 ypos:520]],
+                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:450 ypos:605]],
+                         [NSValue valueWithCGPoint:[utils relativePointByCoordinates:219 ypos:750]],
                           nil];
     
     routesHolder = [CCSprite node];
@@ -49,15 +51,15 @@
     
     for(int i=0; i < count; i++)
     {
-        NSString *imagepath = [NSString stringWithFormat:@"path%d.png", i];
-        NSString *imagepathBlocked = [NSString stringWithFormat:@"path%dBlocked.png", i];
+        NSString *imagepath = [NSString stringWithFormat:@"route%d.png", i];
+        NSString *imagepathBlocked = [NSString stringWithFormat:@"route%d-blocked.png", i];
         
-        CCSprite *route = [CCSprite spriteWithFile:imagepath];
+        CCSprite *route = [CCSprite spriteWithSpriteFrameName:imagepath];
         route.anchorPoint = ccp(0, 1);
         route.position = [[positions objectAtIndex:i] CGPointValue];
         [routesHolder addChild:route];
         
-        CCSprite *routeBlocked = [CCSprite spriteWithFile:imagepathBlocked];
+        CCSprite *routeBlocked = [CCSprite spriteWithSpriteFrameName:imagepathBlocked];
         routeBlocked.anchorPoint = ccp(0, 1);
         routeBlocked.position = [[positions objectAtIndex:i] CGPointValue];
         routeBlocked.visible = 0;
@@ -69,7 +71,10 @@
 
 - (void) setup
 {
-    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"routes.plist"];
+    routesBatch = [CCSpriteBatchNode batchNodeWithFile:@"routes.png"];
+    current = self;
+    blockedIndex = -1;
 }
 
 -(void)blockRoute:(int)index
@@ -93,15 +98,35 @@
     }
 }
 
--(BOOL)getPermissionToCross:(int)route
+-(BOOL)getPermissionToCrossCampFrom:(int)cf campTo:(int)ct
 {
-    if(route == blockedIndex)
+    //targetCamp lower then startCamp
+    if(ct < cf)
     {
-        return YES;
+        if(ct == blockedIndex)
+        {
+            return NO;
+        }
+        else
+        {
+            return YES;
+        }
+    }
+    else if(ct > cf)
+    {
+        //target camp higher then startCamp
+        if(cf == blockedIndex)
+        {
+            return NO;
+        }
+        else
+        {
+            return YES;
+        }
     }
     else
     {
-        return NO;
+        return YES;
     }
 }
 
@@ -113,6 +138,16 @@
 -(void)updateTurn:(int)turn
 {
 
+}
+
++(Routes*) current
+{
+    if (current == nil)
+    {
+        current = [[Routes alloc] init];
+    }
+    
+    return current;
 }
 
 -(void) dealloc

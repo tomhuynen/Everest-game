@@ -22,7 +22,7 @@
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{0, 40}, {46, 6}}</string>
+			<string>{{0, 32}, {46, 6}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
@@ -44,34 +44,12 @@
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{0, 32}, {46, 6}}</string>
+			<string>{{0, 40}, {46, 6}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
 		
-		<key>bar2.png</key>
-		<dict>
-			<key>aliases</key>
-			<array>
-			
-			</array>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {46, 6}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{46, 6}</string>
-			<key>spriteSourceSize</key>
-			<string>{46, 6}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{0, 64}, {46, 6}}</string>
-			<key>textureRotated</key>
-			<false/>
-		</dict>
-		
-		<key>bar3.png</key>
+		<key>bar10.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
@@ -93,95 +71,7 @@
 			<false/>
 		</dict>
 		
-		<key>bar4.png</key>
-		<dict>
-			<key>aliases</key>
-			<array>
-			
-			</array>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {46, 6}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{46, 6}</string>
-			<key>spriteSourceSize</key>
-			<string>{46, 6}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{0, 56}, {46, 6}}</string>
-			<key>textureRotated</key>
-			<false/>
-		</dict>
-		
-		<key>bar5.png</key>
-		<dict>
-			<key>aliases</key>
-			<array>
-			
-			</array>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {46, 6}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{46, 6}</string>
-			<key>spriteSourceSize</key>
-			<string>{46, 6}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{0, 0}, {46, 6}}</string>
-			<key>textureRotated</key>
-			<false/>
-		</dict>
-		
-		<key>bar6.png</key>
-		<dict>
-			<key>aliases</key>
-			<array>
-			
-			</array>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {46, 6}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{46, 6}</string>
-			<key>spriteSourceSize</key>
-			<string>{46, 6}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{0, 48}, {46, 6}}</string>
-			<key>textureRotated</key>
-			<false/>
-		</dict>
-		
-		<key>bar7.png</key>
-		<dict>
-			<key>aliases</key>
-			<array>
-			
-			</array>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {46, 6}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{46, 6}</string>
-			<key>spriteSourceSize</key>
-			<string>{46, 6}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{0, 8}, {46, 6}}</string>
-			<key>textureRotated</key>
-			<false/>
-		</dict>
-		
-		<key>bar8.png</key>
+		<key>bar2.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
@@ -203,7 +93,7 @@
 			<false/>
 		</dict>
 		
-		<key>bar9.png</key>
+		<key>bar3.png</key>
 		<dict>
 			<key>aliases</key>
 			<array>
@@ -221,6 +111,138 @@
 			<true/>
 			<key>textureRect</key>
 			<string>{{0, 16}, {46, 6}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>bar4.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {46, 6}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{46, 6}</string>
+			<key>spriteSourceSize</key>
+			<string>{46, 6}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {46, 6}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>bar5.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {46, 6}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{46, 6}</string>
+			<key>spriteSourceSize</key>
+			<string>{46, 6}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 56}, {46, 6}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>bar6.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {46, 6}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{46, 6}</string>
+			<key>spriteSourceSize</key>
+			<string>{46, 6}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 64}, {46, 6}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>bar7.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {46, 6}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{46, 6}</string>
+			<key>spriteSourceSize</key>
+			<string>{46, 6}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 80}, {46, 6}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>bar8.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {46, 6}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{46, 6}</string>
+			<key>spriteSourceSize</key>
+			<string>{46, 6}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 8}, {46, 6}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>bar9.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {46, 6}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{46, 6}</string>
+			<key>spriteSourceSize</key>
+			<string>{46, 6}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 48}, {46, 6}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>

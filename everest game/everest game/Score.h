@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Utils.h"
 
 @interface Score : CCNode
 {
     int value;
+    
+    Utils *utils;
+    CCSprite *background;
 }
 
 -(void)addAmount:(int)v;

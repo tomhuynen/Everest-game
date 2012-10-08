@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>timewindow1.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{38, 247}, {26, 26}}</string>
+			<key>spriteOffset</key>
+			<string>{-113, -121}</string>
+			<key>spriteSize</key>
+			<string>{26, 26}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{966, 64}, {26, 26}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow10.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 6}, {158, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{-81, -1}</string>
+			<key>spriteSize</key>
+			<string>{158, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{742, 540}, {158, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow11.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {188, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{-66, -0}</string>
+			<key>spriteSize</key>
+			<string>{188, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{274, 810}, {188, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow12.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {218, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{-51, -0}</string>
+			<key>spriteSize</key>
+			<string>{218, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{522, 540}, {218, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow13.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {246, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{-37, -0}</string>
+			<key>spriteSize</key>
+			<string>{246, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{274, 540}, {246, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow14.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {272, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{-24, -0}</string>
+			<key>spriteSize</key>
+			<string>{272, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 708}, {272, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow15.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {294, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{-13, -0}</string>
+			<key>spriteSize</key>
+			<string>{294, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{634, 270}, {294, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow16.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {310, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{-5, -0}</string>
+			<key>spriteSize</key>
+			<string>{310, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{322, 270}, {310, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow17.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {320, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{320, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{322, 0}, {320, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow18.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {320, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{320, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {320, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow19.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {320, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{320, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{644, 0}, {320, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow2.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{16, 212}, {48, 62}}</string>
+			<key>spriteOffset</key>
+			<string>{-124, -104}</string>
+			<key>spriteSize</key>
+			<string>{48, 62}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{966, 0}, {48, 62}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow20.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 5}, {320, 268}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{320, 268}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 270}, {320, 268}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow3.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{5, 173}, {60, 100}}</string>
+			<key>spriteOffset</key>
+			<string>{-129, -84}</string>
+			<key>spriteSize</key>
+			<string>{60, 100}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{62, 540}, {60, 100}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow4.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 135}, {60, 138}}</string>
+			<key>spriteOffset</key>
+			<string>{-130, -65}</string>
+			<key>spriteSize</key>
+			<string>{60, 138}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 540}, {60, 138}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow5.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 99}, {60, 174}}</string>
+			<key>spriteOffset</key>
+			<string>{-130, -47}</string>
+			<key>spriteSize</key>
+			<string>{60, 174}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{130, 978}, {60, 174}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow6.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 69}, {60, 204}}</string>
+			<key>spriteOffset</key>
+			<string>{-130, -32}</string>
+			<key>spriteSize</key>
+			<string>{60, 204}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{930, 502}, {60, 204}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow7.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 44}, {72, 230}}</string>
+			<key>spriteOffset</key>
+			<string>{-124, -20}</string>
+			<key>spriteSize</key>
+			<string>{72, 230}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{930, 270}, {72, 230}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow8.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 25}, {98, 248}}</string>
+			<key>spriteOffset</key>
+			<string>{-111, -10}</string>
+			<key>spriteSize</key>
+			<string>{98, 248}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{902, 708}, {98, 248}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>timewindow9.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{4, 12}, {128, 262}}</string>
+			<key>spriteOffset</key>
+			<string>{-96, -4}</string>
+			<key>spriteSize</key>
+			<string>{128, 262}</string>
+			<key>spriteSourceSize</key>
+			<string>{328, 278}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 978}, {128, 262}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.5.5</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{1024, 2048}</string>
+		<key>name</key>
+		<string>Untitled 2</string>
+		<key>premultipliedAlpha</key>
+		<false/>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>timewindow-hd</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>timewindow-hd</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

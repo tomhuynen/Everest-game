@@ -22,6 +22,8 @@
 @synthesize positions;
 @synthesize boxRights;
 @synthesize camps;
+@synthesize campBatch;
+@synthesize spaceCampToBox;
 
 static CampManager* sharedInstance;
 
@@ -47,11 +49,11 @@ static CampManager* sharedInstance;
 {
     utils = [Utils current];
     
-    positions =  [NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:224 ypos:42]],
-                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:342 ypos:192]],
-                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:449 ypos:261]],
-                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:485 ypos:336]],
-                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:444 ypos:405]],
+    positions =  [NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:227 ypos:58]],
+                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:469 ypos:335]],
+                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:477 ypos:450]],
+                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:489 ypos:543]],
+                 [NSValue valueWithCGPoint:[utils relativePointByCoordinates:454 ypos:617]],
                  nil];
     
     heights = [NSArray arrayWithObjects:[NSNumber numberWithInteger:1000],
@@ -69,13 +71,26 @@ static CampManager* sharedInstance;
                  nil];
     
     boxRights = [[NSArray arrayWithObjects:[NSNumber numberWithInteger:1],
-                 [NSNumber numberWithInteger:-1],
+                 [NSNumber numberWithInteger:1],
                  [NSNumber numberWithInteger:1],
                  [NSNumber numberWithInteger:-1],
                  [NSNumber numberWithInteger:-1],
                  nil] retain];
     
+    spaceCampToBox = [[NSArray arrayWithObjects:[NSNumber numberWithInteger:[utils relativeDistance:90 horizontal:YES]],
+                     [NSNumber numberWithInteger:[utils relativeDistance:70 horizontal:YES]],
+                     [NSNumber numberWithInteger:[utils relativeDistance:70 horizontal:YES]],
+                     [NSNumber numberWithInteger:[utils relativeDistance:80 horizontal:YES]],
+                     [NSNumber numberWithInteger:[utils relativeDistance:75 horizontal:YES]],
+                     nil] retain];
+    
     camps = [[NSMutableArray alloc] init];
+    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"camps.plist"];
+    campBatch = [CCSpriteBatchNode batchNodeWithFile:@"camps.png"];
+    
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"boxes.plist"];
+    boxBatch = [CCSpriteBatchNode batchNodeWithFile:@"boxes.png"];
 }
 
 -(void)display

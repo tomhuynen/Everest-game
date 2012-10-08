@@ -16,6 +16,7 @@
     int time;
 }
 
++(Timer*) current;
 -(void)registerUser: (CCNode*)user;
 -(void)removeUser: (CCNode*)userToRemove;
 -(void)notifyTurn;

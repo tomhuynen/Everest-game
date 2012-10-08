@@ -8,6 +8,7 @@
 
 #import "Camp.h"
 #import "Utils.h"
+#import "CampManager.h"
 
 @interface Camp (PrivateMethods)
 -(void) setup;
@@ -16,6 +17,7 @@
 
 @implementation Camp
 @synthesize campId;
+@synthesize material;
 
 -(id) initWithId:(int)i height:(int)h distance:(int)d boxRight:(int)br
 {
@@ -37,11 +39,11 @@
 {
     imgHolder = [CCSprite node];
     imgNight = [CCSprite node];
-    imgDay = [CCSprite spriteWithFile:[NSString stringWithFormat:@"camp%d.png", campId]];
+    imgDay = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"camp%d.png", campId]];
     boxHolder = [CCSprite node];
-    box = [CCSprite spriteWithFile:[NSString stringWithFormat:@"box%d.png", campId]];
+    box = [CCSprite spriteWithSpriteFrameName:@"box1.png"];
     
-    boxHolder.position = ccp(boxRight * [utils relativeDistance:60 horizontal:YES], 0);
+    boxHolder.position = ccp(boxRight * [[[CampManager current].spaceCampToBox objectAtIndex:campId] integerValue], 0);
     
     [self addChild:imgHolder];
     [imgHolder addChild:imgNight];

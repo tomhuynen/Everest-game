@@ -45,7 +45,7 @@
     isInArray = YES;
     utils = [Utils node];
     campId = 0;
-    diameter = [utils relativeDistance:54 horizontal:YES];
+    diameter = [utils relativeDistance:50 horizontal:YES];
     radius = [utils relativeDistance:27 horizontal:YES];
 }
 

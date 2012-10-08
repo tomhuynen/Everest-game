@@ -29,12 +29,15 @@
 
 -(void)setup
 {
+    utils = [Utils current];
     value = 0;
 }
 
 -(void)display
 {
-
+    background = [CCSprite spriteWithFile:@"score.png"];
+    self.position = [utils relativePointByCoordinates:926 ypos:664];
+    [self addChild:background];
 }
 
 -(void)addAmount:(int)v
@@ -43,3 +46,10 @@
 }
 
 @end
+
+
+
+
+
+
+

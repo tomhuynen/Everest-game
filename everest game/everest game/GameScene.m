@@ -38,10 +38,11 @@
 	if( (self=[super init])) {
 		
         utils = [Utils node];
-        
+       // [director setDeviceOrientation:kCCDeviceOrientationLandscapeLeft];
         [self display];
         
 	}
+    
 	return self;
 }
 
@@ -68,8 +69,6 @@
     [self addChild:timer];
     [self addChild:materialChoice];
     [self addChild:events];
-    
-    [routes blockRoute:1];
 }
 
 // on "dealloc" you need to release all your retained objects
