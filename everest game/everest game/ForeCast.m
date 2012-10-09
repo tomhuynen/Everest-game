@@ -70,8 +70,8 @@
     w = [utils relativeDistance:153 horizontal:YES];
     h = [utils relativeDistance:455 horizontal:YES];
     
-    sliderMinPos = -[utils relativeDistance:416 horizontal:NO];
-    sliderMaxPos = -[utils relativeDistance:116 horizontal:NO];
+    sliderMinPos = -[utils relativeDistance:550 horizontal:NO];
+    sliderMaxPos = -[utils relativeDistance:120 horizontal:NO];
 }
 
 -(void)display
@@ -83,30 +83,38 @@
     weatherHolder = [CCSprite node];
     
     int countMax = [weather count];
-    int countPos = 3;
+    int countPos = 1;
     int itemWidth = [utils relativeDistance:40 horizontal:YES];
-    int itemHeight = [utils relativeDistance:60 horizontal:YES];
+    int itemHeight = [utils relativeDistance:75 horizontal:YES];
     int xPos = [utils relativeDistance:(itemWidth * countPos) horizontal:YES];
     int yPos = 0;
     
-    for(int i=countMax -1; i > 0; i--)
+    for(int i=countMax -1; i > -1; i--)
     {
         CCSprite *weatherItem = [CCSprite node];
-        CCSprite *img = [CCSprite spriteWithSpriteFrameName:[weatherTypes objectAtIndex:[[weather objectAtIndex:i] integerValue]]];
-        weatherItem.position = ccp(xPos, yPos);
         
+        CCLabelBMFont *day = [CCLabelBMFont labelWithString:@"day" fntFile:@"daytxt.fnt"];
+        CCLabelBMFont *dayCount = [CCLabelBMFont labelWithString:[NSString stringWithFormat:@"%d", i + 1] fntFile:@"daytxt.fnt"];
+        CCSprite *img = [CCSprite spriteWithSpriteFrameName:[weatherTypes objectAtIndex:[[weather objectAtIndex:i] integerValue]]];
+        
+        weatherItem.position = ccp(xPos, yPos);
+        day.position = ccp(0, [utils relativeDistance:40 horizontal:NO]);
+        dayCount.position = ccp(0, [utils relativeDistance:25 horizontal:NO]);
+        
+        [weatherItem addChild:day];
+        [weatherItem addChild:dayCount];
         [weatherItem addChild:img];
         [weatherHolder addChild:weatherItem];
         
-        if(countPos == 3)
+        if(countPos == 0)
         {
-            countPos = 0;
-            xPos = 0;
+            countPos = 3;
+            xPos = [utils relativeDistance:(itemWidth * countPos) horizontal:YES];
             yPos += [utils relativeDistance:itemHeight horizontal:NO];
         }
         else
         {
-            countPos += 1;
+            countPos -= 1;
             xPos = [utils relativeDistance:(itemWidth * countPos) horizontal:YES];
         }
     }
@@ -118,7 +126,7 @@
     [self addChild:sliderHolder];
     [sliderHolder addChild:slider];
     [slider addChild:weatherHolder];
-    self.position = [utils relativePointByCoordinates:848 ypos:390];
+    self.position = [utils relativePointByCoordinates:835 ypos:390];
 }
 
 -(void)selectSpriteForTouch:(UITouch*)touch

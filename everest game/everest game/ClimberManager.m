@@ -22,6 +22,7 @@
 -(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event;
 -(void)selectSpriteForTouch:(UITouch*)touch;
 -(void)positionClimbersInPanel:(int)id;
+-(void)calculatePlatformPosition;
 @end
 
 @implementation ClimberManager
@@ -36,6 +37,7 @@ static ClimberManager* current;
         
         [self setup];
         [self display];
+        [self calculatePlatformPosition];
     }
     
     return self;
@@ -54,9 +56,9 @@ static ClimberManager* current;
     
     CGPoint campPos0 = [utils relativePointByCoordinates:375 ypos:30];
     CGPoint campPos1 = [utils relativePointByCoordinates:104 ypos:309];
-    CGPoint campPos2 = [utils relativePointByCoordinates:575 ypos:435];
-    CGPoint campPos3 = [utils relativePointByCoordinates:88 ypos:526];
-    CGPoint campPos4 = [utils relativePointByCoordinates:485 ypos:601];
+    CGPoint campPos2 = [utils relativePointByCoordinates:575 ypos:425];
+    CGPoint campPos3 = [utils relativePointByCoordinates:60 ypos:515];
+    CGPoint campPos4 = [utils relativePointByCoordinates:485 ypos:595];
     
     int boxWidth = [utils relativeDistance:315 horizontal:YES];
     int boxHeight = [utils relativeDistance:54 horizontal:YES];
@@ -67,14 +69,12 @@ static ClimberManager* current;
     panel3boundingBox = CGRectMake(campPos3.x, campPos3.y, boxWidth, boxHeight);
     panel4boundingBox = CGRectMake(campPos4.x, campPos4.y, boxWidth, boxHeight);
     
-    /*
-    panelBoundingBoxes = [[NSArray arrayWithObjects:[NSValue valueWithCGRect:panel0boundingBox],
-                           [NSValue valueWithCGRect:panel1boundingBox],
-                           [NSValue valueWithCGRect:panel2boundingBox],
-                           [NSValue valueWithCGRect:panel3boundingBox],
-                           [NSValue valueWithCGRect:panel4boundingBox],
-                           nil] retain];
-     */
+    platFormPositions = [[NSMutableArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:0 ypos:0]],
+                        [NSValue valueWithCGPoint:[utils relativePointByCoordinates:0 ypos:0]],
+                        [NSValue valueWithCGPoint:[utils relativePointByCoordinates:0 ypos:0]],
+                        [NSValue valueWithCGPoint:[utils relativePointByCoordinates:0 ypos:0]],
+                        [NSValue valueWithCGPoint:[utils relativePointByCoordinates:0 ypos:0]],
+                        nil] retain];
     
     panelBoundingBoxes = [[NSArray arrayWithObjects:[NSValue valueWithCGRect:panel0boundingBox],
                            [NSValue valueWithCGRect:panel1boundingBox],
@@ -82,13 +82,6 @@ static ClimberManager* current;
                            [NSValue valueWithCGRect:panel3boundingBox],
                            [NSValue valueWithCGRect:panel4boundingBox],
                            nil] retain];
-    
-    panelPositions = [[NSArray arrayWithObjects:[NSValue valueWithCGPoint:[utils relativePointByCoordinates:340 ypos:42]],
-                       [NSValue valueWithCGPoint:[utils relativePointByCoordinates:438 ypos:168]],
-                       [NSValue valueWithCGPoint:[utils relativePointByCoordinates:564 ypos:251]],
-                       [NSValue valueWithCGPoint:[utils relativePointByCoordinates:555 ypos:324]],
-                       [NSValue valueWithCGPoint:[utils relativePointByCoordinates:509 ypos:391]],
-                       nil] retain];
     
     panelRights = [[NSArray arrayWithObjects:[NSNumber numberWithInteger:1],
                   [NSNumber numberWithInteger:-1],
@@ -103,7 +96,6 @@ static ClimberManager* current;
     panelClimberCamp3 = [[NSMutableArray alloc] init];
     panelClimberCamp4 = [[NSMutableArray alloc] init];
     panelClimbers = [[NSArray arrayWithObjects:panelClimberCamp0, panelClimberCamp1, panelClimberCamp2, panelClimberCamp3, panelClimberCamp4, nil] retain];
-    
 }
 
 -(void)display
@@ -201,7 +193,7 @@ static ClimberManager* current;
                     //position only in camp when 1: climber is not in camp allready, 2: routes agrees 3: next camp is next to previous one.
                     if(movingClimber.isInArray == NO &&
                        [[Routes current] getPermissionToCrossCampFrom:movingClimber.campId campTo:currentPanelId ] &&
-                       abs(currentPanelId - movingClimber.campId) <= 1)
+                       abs(currentPanelId - campLeftByClimber.campId) <= 1)
                     {
                         movingClimber.isInArray = YES;
                         movingClimber.campId = currentPanelId;
@@ -220,12 +212,33 @@ static ClimberManager* current;
         {
             if(movingClimber.isInArray == YES)
             {
+                //remove climber from panel
                 currentPanelId = -1;
                 movingClimber.isInArray = NO;
                 NSMutableArray *currentPanelClimbers = [panelClimbers objectAtIndex:movingClimber.campId];
                 [currentPanelClimbers removeObject:movingClimber];
                 [self positionClimbersInPanel:movingClimber.campId];
-                NSLog(@"remove");
+                
+                if(abs(campLeftByClimber.campId - movingClimber.campId) <= 1)
+                {
+                    //show platform
+                    if(movingClimber.position.y > movingClimber.startDragPosition.y)
+                    {
+                        if(movingClimber.campId <= 3)
+                        {
+                            platform.position = [[platFormPositions objectAtIndex:campLeftByClimber.campId + 1] CGPointValue];
+                        }
+                    }
+                    else
+                    {
+                        if(movingClimber.campId >= 1)
+                        {
+                            platform.position = [[platFormPositions objectAtIndex:campLeftByClimber.campId - 1] CGPointValue];
+                        }
+                    }
+                
+                    platform.visible = YES;
+                }
             }
         }
     }
@@ -246,7 +259,7 @@ static ClimberManager* current;
         {
             if(movingClimber.campId != campLeftByClimber.campId)
             {
-                [[MaterialChoice current] show];
+                [[MaterialChoice current] show:campLeftByClimber.campId targetCamp:movingClimber.campId];
             }
         }
         
@@ -256,6 +269,8 @@ static ClimberManager* current;
         movingClimber = nil;
         [self positionClimbersInPanel:campId];
     }
+    
+    platform.visible = NO;
 }
 
 - (void) panForTranslation:(CGPoint)translation
@@ -323,14 +338,40 @@ static ClimberManager* current;
         CGPoint climberPosition = ccp(startPosX + (plusMin * i * climberSpacing), startPosY);
 
         
-        if(climber == movingClimber)
-        {
-            platform.position = climberPosition;
-        }
-        else
+        if(climber != movingClimber)
         {
             climber.position = climberPosition;
         }
+    }
+    
+    [self calculatePlatformPosition];
+}
+
+-(void)calculatePlatformPosition
+{
+    int count = [platFormPositions count];
+    
+    for(int i=0; i < count; i++)
+    {
+        int plusMin = [[panelRights objectAtIndex:i] integerValue];
+        NSMutableArray *currentPanelClimbers = [panelClimbers objectAtIndex:i];
+        CGRect boundingBox = [[panelBoundingBoxes objectAtIndex:i] CGRectValue];
+        
+        int startPosX;
+        int startPosY = boundingBox.origin.y + [[Climber current] radius];
+        
+        if(plusMin == 1)
+        {
+            startPosX = boundingBox.origin.x + [[Climber current] radius];
+        }
+        else
+        {
+            startPosX = boundingBox.origin.x + boundingBox.size.width - [[Climber current] radius];
+        }
+        
+        
+        CGPoint platformPosition = ccp(startPosX + (plusMin * [currentPanelClimbers count] * climberSpacing), startPosY);
+        [platFormPositions replaceObjectAtIndex:i withObject:[NSValue valueWithCGPoint:platformPosition]];
     }
 }
 

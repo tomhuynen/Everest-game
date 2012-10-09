@@ -16,6 +16,7 @@
     
     Utils *utils;
     CCSprite *background;
+    CCLabelBMFont *scoretxt;
 }
 
 -(void)addAmount:(int)v;

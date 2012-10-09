@@ -30,7 +30,6 @@
     CGRect panel3boundingBox;
     CGRect panel4boundingBox;
     NSArray *panelBoundingBoxes;
-    NSArray *panelPositions;
     NSArray *panelRights;
     
     NSMutableArray *panelClimberCamp0;
@@ -38,6 +37,7 @@
     NSMutableArray *panelClimberCamp2;
     NSMutableArray *panelClimberCamp3;
     NSMutableArray *panelClimberCamp4;
+    NSMutableArray *platFormPositions;
     NSArray *panelClimbers;
 }
 

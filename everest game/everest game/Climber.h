@@ -29,6 +29,7 @@
     CCSprite *image;
 }
 
++(Climber *) current;
 -(void)scaleUp;
 -(void)scaleDown;
 -(id)initWithId:(int)i campPositionId: (int)cp;

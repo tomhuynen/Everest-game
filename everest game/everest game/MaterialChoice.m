@@ -35,6 +35,7 @@ static MaterialChoice* current;
 -(void)setup
 {
     utils = [Utils current];
+    campManager = [CampManager current];
     
     rectWidth = [utils relativeDistance:151 horizontal:YES];
     rectHeight = [utils relativeDistance:166 horizontal:NO];
@@ -76,8 +77,11 @@ static MaterialChoice* current;
     [self addChild:holder];
 }
 
--(void)show
+-(void)show: (int)campFrom targetCamp:(int)campTo;
 {
+    materialFromCampId = campFrom;
+    materialToCampId = campTo;
+    
     holder.opacity = 255;
     fade.opacity = 60;
     isActive = YES;
@@ -113,7 +117,7 @@ static MaterialChoice* current;
 
 - (void) ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
-
+    
 }
 
 -(void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
@@ -122,6 +126,10 @@ static MaterialChoice* current;
     {
         holder.opacity = 0;
         fade.opacity = 0;
+        
+        //update material
+        [[CampManager current] removeMaterial:lastAmountChoosen camp:materialFromCampId];
+        [[CampManager current] addMaterial:lastAmountChoosen camp:materialToCampId];
         
         amountIsChosen = NO;
         isActive = NO;

@@ -24,6 +24,7 @@
 // HelloWorldLayer
 @interface GameScene : CCLayer
 {
+    
     Utils *utils;
     Background *background;
     Routes *routes;

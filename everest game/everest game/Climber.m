@@ -25,11 +25,15 @@
 @synthesize leftPanelPosition;
 @synthesize isInArray;
 
+static Climber *current;
+
 
 -(id)initWithId:(int)i campPositionId: (int)cp
 {
     if(self = [super init])
     {
+        current = self;
+        
         climberId = i;
         campPositionId = cp;
         
@@ -63,6 +67,16 @@
 -(void)scaleDown
 {
 
+}
+
++(Climber *) current
+{
+    if(current == nil)
+    {
+        current = [[Climber alloc] init];
+    }
+    
+    return current;
 }
 
 @end

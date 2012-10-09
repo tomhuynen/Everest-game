@@ -25,11 +25,13 @@
     CCSprite *imgDay;
     CCSprite *boxHolder;
     CCSprite *box;
-    CCLabelTTF *materialAmount;
+    CCLabelBMFont *materialtxt;
 }
 
 -(id) initWithId:(int)i height:(int)h distance:(int)d boxRight: (int)br;
 -(void)display;
+-(void)addMaterial:(int)amount;
+-(void)removeMaterial:(int)amount;
 
 @property int campId;
 @property int material;

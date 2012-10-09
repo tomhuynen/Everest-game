@@ -36,8 +36,15 @@
 -(void)display
 {
     background = [CCSprite spriteWithFile:@"score.png"];
+    scoretxt = [CCLabelBMFont labelWithString:@"0.00" fntFile:@"scoretxt.fnt"];
+    
     self.position = [utils relativePointByCoordinates:926 ypos:664];
+    
+    
     [self addChild:background];
+    [self addChild:scoretxt];
+    
+
 }
 
 -(void)addAmount:(int)v

@@ -21,6 +21,7 @@
     
     bar = [Bar node];
     [boxHolder addChild:bar];
+    bar.position = ccp(0, -[utils relativeDistance:15 horizontal:NO]);
 }
 
 @end

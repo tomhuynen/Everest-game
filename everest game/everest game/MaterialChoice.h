@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "Utils.h"
+#import "CampManager.h"
 
 @interface MaterialChoice : CCLayer {
     
     Utils *utils;
+    CampManager *campManager;
+    
     int lastAmountChoosen;
+    int materialFromCampId;
+    int materialToCampId;
     BOOL amountIsChosen;
     BOOL isActive;
     
@@ -33,7 +38,7 @@
 }
 
 +(MaterialChoice*) current;
--(void)show;
+-(void)show: (int)campFrom targetCamp:(int)campTo;
 
 @property int lastAmountChoosen;
 

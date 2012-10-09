@@ -40,11 +40,6 @@ static CampManager* sharedInstance;
 	return self;
 }
 
-+(CampManager *)current;
-{
-    return sharedInstance;
-}
-
 -(void) setup
 {
     utils = [Utils current];
@@ -106,6 +101,7 @@ static CampManager* sharedInstance;
                                          boxRight:[[boxRights objectAtIndex:i] integerValue]];
             
             camp.position = [[positions objectAtIndex:i] CGPointValue];
+            [camp addMaterial:250];
             [self addChild:camp];
             [camps addObject:camp];
         }
@@ -122,14 +118,31 @@ static CampManager* sharedInstance;
     }
 }
 
+-(void) addMaterial: (int)amount camp:(int)id
+{
+    Camp *camp = [camps objectAtIndex:id];
+    [camp addMaterial:amount];
+}
+
+-(void)removeMaterial:(int)amount camp:(int)id
+{
+    Camp *camp = [camps objectAtIndex:id];
+    [camp removeMaterial:amount];
+}
+
 -(void)updateTime:(int)time
 {
-
+    
 }
 
 -(void)updateTurn:(int)turn
 {
 
+}
+
++(CampManager *)current;
+{
+    return sharedInstance;
 }
 
 -(void) dealloc

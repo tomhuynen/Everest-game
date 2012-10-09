@@ -36,5 +36,7 @@
 @property (nonatomic, retain) CCSpriteBatchNode *campBatch;
 
 +(CampManager *)current;
+-(void) addMaterial: (int)amount camp:(int)id;
+-(void) removeMaterial: (int)amount camp:(int)id;
 
 @end

@@ -12,6 +12,7 @@
 
 @interface Camp (PrivateMethods)
 -(void) setup;
+-(void) updateMaterial;
 @end
 
 
@@ -42,6 +43,7 @@
     imgDay = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"camp%d.png", campId]];
     boxHolder = [CCSprite node];
     box = [CCSprite spriteWithSpriteFrameName:@"box1.png"];
+    materialtxt = [CCLabelBMFont labelWithString:@"110kg" fntFile:@"material.fnt"];
     
     boxHolder.position = ccp(boxRight * [[[CampManager current].spaceCampToBox objectAtIndex:campId] integerValue], 0);
     
@@ -50,6 +52,41 @@
     [imgHolder addChild:imgDay];
     [imgHolder addChild:boxHolder];
     [boxHolder addChild:box];
+    [boxHolder addChild:materialtxt];
+}
+
+-(void)addMaterial:(int)amount
+{
+    material += amount;
+    [self updateMaterial];
+}
+
+-(void)removeMaterial:(int)amount
+{
+    material -= amount;
+    [self updateMaterial];
+}
+
+-(void)updateMaterial
+{
+    [materialtxt setString:[NSString stringWithFormat:@"%dkg", material]];
+    
+    CCSpriteFrame *frame;
+    
+    if(material < 15)
+    {
+        frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"box1.png"];
+    }
+    else if(material > 15 && material < 30)
+    {
+        frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"box2.png"];
+    }
+    else
+    {
+        frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"box3.png"];
+    }
+    
+    [box setDisplayFrame:frame];
 }
 
 - (void) setup
